@@ -75,6 +75,7 @@
             </v-card>
           </v-col>
         </v-row>
+        <v-icon>fas fa-lock</v-icon>
       </v-container>
     </v-content>
   </v-app>
