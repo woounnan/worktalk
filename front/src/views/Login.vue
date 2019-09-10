@@ -51,8 +51,6 @@
                   <span>Codepen</span>
                 </v-tooltip>
               </v-toolbar>
-              testsetset
-               <v-icon>mdi-mouse</v-icon>
               <v-card-text>
                 <v-form>
                   <v-text-field
