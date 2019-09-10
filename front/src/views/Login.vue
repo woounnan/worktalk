@@ -1,6 +1,5 @@
 <template>
   <v-app id="inspire">
-    <v-icon>fas fa-lock</v-icon>
     <v-content>
       <v-container
         class="fill-height"
@@ -60,11 +59,10 @@
                     prepend-icon="person"
                     type="text"
                   ></v-text-field>
-
-                  <v-icon>fas fa-lock</v-icon>
                   <v-text-field
                     id="password"
                     label="Password"
+                    prepend-icon="lock"                    
                     name="password"
                     type="password"
                   ></v-text-field>
