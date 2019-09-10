@@ -1,5 +1,6 @@
 <template>
   <v-app id="inspire">
+    <v-icon>fas fa-lock</v-icon>
     <v-content>
       <v-container
         class="fill-height"
