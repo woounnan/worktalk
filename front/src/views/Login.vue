@@ -60,11 +60,11 @@
                     type="text"
                   ></v-text-field>
 
+                  <v-icon>fas fa-lock</v-icon>
                   <v-text-field
                     id="password"
                     label="Password"
                     name="password"
-                    prepend-icon="lock"
                     type="password"
                   ></v-text-field>
                 </v-form>
