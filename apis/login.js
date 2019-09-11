@@ -2,7 +2,7 @@ var express = require('express')
 var createError = require('http-errors')
 var router = express.Router()
 
-router.post('/login', (req, res) => {
+router.post('/', (req, res) => {
 	const {id , pwd} = req.body
 	if(!id || !pwd){
 		console.log('failed login')
