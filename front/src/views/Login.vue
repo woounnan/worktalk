@@ -91,7 +91,7 @@
     },
     methods: {
       login(){
-        this.axios.post(`https://webhacker.xyz:8000/apis/login`, this.form)
+        axios.post(`https://webhacker.xyz:8000/apis/login`, this.form)
         .then(r => console.log(r.data))
         .catch(e => console.error(e.message))
       }
