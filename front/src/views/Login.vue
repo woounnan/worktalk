@@ -54,14 +54,12 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    label="Login"
-                    name="login"
+                    v-model="form.id"
                     prepend-icon="person"
                     type="text"
                   ></v-text-field>
                   <v-text-field
-                    id="password"
-                    label="Password"
+                    v-model="form.pw"
                     prepend-icon="lock"                    
                     name="password"
                     type="password"
@@ -82,11 +80,22 @@
 
 <script>
   export default {
-    props: {
-      source: String,
+    data () {
+      return {
+        form: {
+          id: '',
+          pwd: ''
+        }
+      }
     },
-    data: () => ({
-      drawer: null,
-    }),
-  }
+    methods: {
+      login(){
+        console.log(`${this.$apiRootPath}`)
+        /*
+        axios.post(`${this.$apiRootPath}sign/in`, this.form)
+        .then(r => console.log(r.data))
+        .catch(e => console.error(e.message))
+        */
+      }
+    }
 </script>
