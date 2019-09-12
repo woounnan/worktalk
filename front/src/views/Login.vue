@@ -75,8 +75,17 @@
         </v-row>
       </v-container>
     </v-content>
-    <v-alert value="true" type="error" :v-model="wd.msg">
+<template>
+  <div>
+    <v-alert v-model="alert" type="success">
+      This is a success alert that is closable.
     </v-alert>
+
+    <div class="text-xs-center">
+      <v-btn v-if="!alert" color="primary" dark @click="alert = true">Reset</v-btn>
+    </div>
+  </div>
+</template>
   </v-app>
 </template>
 
