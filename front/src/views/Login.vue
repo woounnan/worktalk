@@ -101,8 +101,8 @@
     },
     methods: {
       check(){
-        id = this.form.id
-        pw = this.form.pw
+        var id = this.form.id
+        var pw = this.form.pw
         console.log('call the check funciton')
         console.log('id : '+id)
         console.log('pw : '+pw)
