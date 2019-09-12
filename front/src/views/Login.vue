@@ -116,7 +116,7 @@
             if(r.data.code != 1){
               this.wd.state = true
             }
-            console.log(r)
+            console.log(r.data)
           })
           .catch(e => console.error(e.message))
       }
