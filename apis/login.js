@@ -22,7 +22,8 @@ router.post('/', (req, res) => {
 		}
 		console.log('login succeeded')
 		//generate a token
-		jwt.sign({user.id, user.pw}, user.key, (e, token) =>{
+		var key = user.key
+		jwt.sign({id, pw}, key, (e, token) =>{
 			if(e) return res.send({code: 0, msg: 'error on token'})
 			res.send({code: 1, tk: token})
 		})
