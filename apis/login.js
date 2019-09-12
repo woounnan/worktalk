@@ -4,23 +4,18 @@ var router = express.Router()
 var User = require('./model')
 const jwt = require('jsonwebtoken')
 
+//login.js
+//find the user and return a token generated 
 console.log('what happenning occured now?')
 
 router.post('/', (req, res) => {
 	const {id , pw} = req.body
 	if(!id || !pw){
 		console.log('failed login')
-		return res.send({success: false, msg: 'invalid input values.'})
+		return res.send({code: 0, msg: 'invalid input values.'})
 	}
 
-
-	var users = new User({id: id, password: pw})
-
-	users.save( ( e, user) =>{
-		if(e) return console.error('login.js::10....occurred at users.save')
-			console.log('User created')
-	})
-	res.send({success: true, msg: 'Create user successfully'})
+	res.send({code: 1, msg: 'Create user successfully'})
 
 })
 

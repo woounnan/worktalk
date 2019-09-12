@@ -75,6 +75,9 @@
         </v-row>
       </v-container>
     </v-content>
+    <v-alert :value="true" type="error">
+      This is a error alert.
+    </v-alert>
   </v-app>
 </template>
 
@@ -90,6 +93,9 @@
       }
     },
     methods: {
+      check(){
+
+      },
       login(){
         axios.post(`http://webhacker.xyz:8000/apis/login`, this.form)
         .then(r => console.log(r.data))
