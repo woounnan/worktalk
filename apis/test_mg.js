@@ -8,8 +8,9 @@ const userSchema = new mongoose.Schema({
 	password: { type: String, required: true, unique: true, trim: true }
 })
 
-var users = mongoose.model('test', userSchema)
+var User = mongoose.model('test', userSchema)
 
+var users = new User('Bob', 'bobob')
 users.save( ( e, user) =>{
 	if(e) return console.error('login.js::10....occurred at users.save')
 		console.log('User created')
