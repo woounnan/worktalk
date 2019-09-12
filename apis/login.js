@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
 	}
 
 
-	var users = new User(id, pw)
+	var users = new User({id: id, password: pw})
 
 	users.save( ( e, user) =>{
 		if(e) return console.error('login.js::10....occurred at users.save')
