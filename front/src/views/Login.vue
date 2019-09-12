@@ -85,7 +85,7 @@
       return {
         form: {
           id: '',
-          pwd: ''
+          pw: ''
         }
       }
     },
