@@ -9,13 +9,13 @@ const jwt = require('jsonwebtoken')
 
 router.post('/', (req, res) => {
 	const {id , pw} = req.body
-	if(!id || !pw){
-		console.log('failed login')
-		return res.send({code: 0})
-	}
-
-	res.send({code: 1})
-
+	User.findOne({id: id, password: pw}, (e, user) =>{
+		if(e) {
+			console.log('login failed')
+			return res.send({code: 0})
+		}
+		res.send({code: 1})
+	})
 })
 
 
