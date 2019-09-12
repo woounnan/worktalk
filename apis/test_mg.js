@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
 
 var User = mongoose.model('test', userSchema)
 
-var users = new User('Bob', 'bobob')
+var users = new User('Bobasdf', 'bobob')
 users.save( ( e, user) =>{
 	if(e) return console.error('login.js::10....occurred at users.save')
 		console.log('User created')
