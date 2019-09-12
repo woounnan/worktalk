@@ -6,8 +6,6 @@ var router = express.Router()
 router.post('/', (req, res) => {
 	const {id , pwd} = req.body
 	if(!id || !pwd){
-		console.log('id:'+id)
-		console.log('pw:'+pw)
 		console.log('failed login')
 		return res.send({success: false, msg: 'invalid input values.'})
 	}
