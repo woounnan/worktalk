@@ -75,7 +75,7 @@
         </v-row>
       </v-container>
     </v-content>
-    <v-alert value="false" type="error" v-model="wd.msg">
+    <v-alert value="true" type="error" v-model="wd.msg">
     </v-alert>
   </v-app>
 </template>
