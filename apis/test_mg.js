@@ -3,7 +3,7 @@ var mongoose = require('mongoose')
 var User = require('./model')
 var express = require('express')
 var createError = require('http-errors')
-var Router = express.Router()
+var router = express.Router()
 console.log('running test pages of mongoose')
 /*
 const userSchema = new mongoose.Schema({
@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema({
 })
 */
 
-Router.get('/test', (res, req) => {	
+router.get('/', (res, req) => {	
 	var users = new User({id: 'bob', password: 'bobob'})
 	users.save( ( e, user) =>{
 		if(e) return console.error('login.js::10....occurred at users.save')
@@ -21,4 +21,4 @@ Router.get('/test', (res, req) => {
 })
 
 
-module.exports = Router
+module.exports = router
