@@ -6,7 +6,6 @@ const jwt = require('jsonwebtoken')
 
 //login.js
 //find the user and return a token generated 
-console.log('what happenning occured now?')
 
 router.post('/', (req, res) => {
 	const {id , pw} = req.body

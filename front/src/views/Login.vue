@@ -78,7 +78,7 @@
 <template>
   <div>
     <v-alert v-model="wd.state" type="error" dismissible>
-      Invalid input!
+      {{wd.msg}}
     </v-alert>
   </div>
 </template>
@@ -95,6 +95,7 @@
           pw: ''
         },
         wd: {
+          msg: '잘못된 입력'
           state: false
         }
       }
@@ -111,7 +112,11 @@
       },
       login(id, pw){
         axios.post(`http://webhacker.xyz:8000/apis/login`, {id: id, pw: pw})
-        .then(r => console.log(r.data))
+        .then(r => {
+          if(r.data.code != 1){
+            this.wd.state = true
+          }
+        })
         .catch(e => console.error(e.message))
       }
     }
