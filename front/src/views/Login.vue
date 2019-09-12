@@ -112,12 +112,13 @@
       },
       login(id, pw){
         axios.post(`http://webhacker.xyz:8000/apis/login`, {id: id, pw: pw})
-        .then(r => {
-          if(r.data.code != 1){
-            this.wd.state = true
-          }
-        })
-        .catch(e => console.error(e.message))
+          .then(r => {
+            if(r.data.code != 1){
+              this.wd.state = true
+            }
+            console.log(r)
+          })
+          .catch(e => console.error(e.message))
       }
     }
 }
