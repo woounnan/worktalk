@@ -107,7 +107,7 @@
           this.wd.state = true
           return -1
         }
-        login(id.split(' ').join(''), pw.split(' ').join(''))
+        this.login(id.split(' ').join(''), pw.split(' ').join(''))
       },
       login(id, pw){
         axios.post(`http://webhacker.xyz:8000/apis/login`, this.form)
