@@ -20,6 +20,7 @@ router.post('/', (req, res) => {
 		if(e) return console.error('login.js::10....occurred at users.save')
 			console.log('User created')
 	})
+	res.send({success: false, msg: 'Create user successfully'})
 
 })
 
