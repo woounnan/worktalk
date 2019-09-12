@@ -2,12 +2,12 @@ var mongoose = require('mongoose')
 var User = require('./model')
 
 console.log('running test pages of mongoose')
-
+/*
 const userSchema = new mongoose.Schema({
 	id: { type: String, required: true, unique: true, trim: true, index: true},
 	password: { type: String, required: true, unique: true, trim: true }
 })
-
+*/
 
 
 var users = new User('Bobasdf', 'bobob')
