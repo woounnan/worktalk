@@ -6,7 +6,7 @@ var createError = require('http-errors')
 var router = express.Router()
 
 
-mongoose.connect('mongodb://webhacker.xyz:27017/users', {useNewUrlParser: true}, (err) =>{
+mongoose.connect('mongodb://localhost:27017/users', {useNewUrlParser: true}, (err) =>{
 	if(err) return console.error('connection error occured in test_mg.js + ['+err + ']')
 	console.log('connection succeeded!')
 });
