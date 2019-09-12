@@ -75,8 +75,7 @@
         </v-row>
       </v-container>
     </v-content>
-    <v-alert :value="wd.state" type="error" v-model="wd.msg">
-      This is a error alert.
+    <v-alert value="false" type="error" v-model="wd.msg">
     </v-alert>
   </v-app>
 </template>
