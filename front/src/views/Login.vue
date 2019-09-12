@@ -101,8 +101,12 @@
     },
     methods: {
       check(){
+        id = this.form.id
+        pw = this.form.pw
         console.log('call the check funciton')
-        if(this.form.id == undefined || this.form.pw == undefined){
+        console.log('id : '+id)
+        console.log('pw : '+pw)
+        if(id == undefined || pw == undefined){
           this.wd.state = true
         }
       },
