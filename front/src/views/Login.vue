@@ -99,7 +99,7 @@
     methods: {
       check(){
         console.log('call the check funciton')
-        if(id == undefined || pw == undefined){
+        if(this.form.id == undefined || this.form.pw == undefined){
           this.wd.msg = 'invalid input'
           this.wd.state = 'true'
         }
