@@ -68,7 +68,7 @@
               </v-card-text>
               <v-card-actions>
                 <div class="flex-grow-1"></div>
-                <v-btn color="primary" @click="login">Login</v-btn>
+                <v-btn color="primary" @click="check">Login</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -77,13 +77,9 @@
     </v-content>
 <template>
   <div>
-    <v-alert v-model="alert" type="success">
-      This is a success alert that is closable.
+    <v-alert v-model="wd.state" type="error" dismissible>
+      Invalid input!
     </v-alert>
-
-    <div class="text-xs-center">
-      <v-btn v-if="!alert" color="primary" dark @click="alert = true">Reset</v-btn>
-    </div>
   </div>
 </template>
   </v-app>
@@ -99,7 +95,6 @@
           pw: ''
         },
         wd: {
-          msg: 'inavlid input',
           state: "false"
         }
       }
@@ -108,7 +103,6 @@
       check(){
         console.log('call the check funciton')
         if(this.form.id == undefined || this.form.pw == undefined){
-          this.wd.msg = 'invalid input'
           this.wd.state = 'true'
         }
       },
