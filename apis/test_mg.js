@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema({
 })
 */
 
-router.get('/test', (res, req) => {	
+Router.get('/test', (res, req) => {	
 	var users = new User({id: 'bob', password: 'bobob'})
 	users.save( ( e, user) =>{
 		if(e) return console.error('login.js::10....occurred at users.save')
