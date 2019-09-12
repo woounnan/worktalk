@@ -4,5 +4,5 @@ var createError = require('http-errors')
 
 router.use('/login', require('./login'))
 
-//router.use('/test', require('./test_mg'))
+router.use('/test', require('./test_mg'))
 module.exports = router
