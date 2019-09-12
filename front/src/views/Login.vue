@@ -95,7 +95,7 @@
           pw: ''
         },
         wd: {
-          state: "false"
+          state: false
         }
       }
     },
@@ -103,7 +103,7 @@
       check(){
         console.log('call the check funciton')
         if(this.form.id == undefined || this.form.pw == undefined){
-          this.wd.state = 'true'
+          this.wd.state = true
         }
       },
       login(){
