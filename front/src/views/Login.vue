@@ -95,7 +95,7 @@
           pw: ''
         },
         wd: {
-          msg: '잘못된 입력'
+          msg: '잘못된 입력',
           state: false
         }
       }
