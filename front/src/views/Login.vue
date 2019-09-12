@@ -75,7 +75,7 @@
         </v-row>
       </v-container>
     </v-content>
-    <v-alert :value="true" type="error">
+    <v-alert :value="true" :type="wd.state" v-model="wd.msg">
       This is a error alert.
     </v-alert>
   </v-app>
@@ -89,12 +89,20 @@
         form: {
           id: '',
           pw: ''
+        },
+        wd: {
+          msg: '',
+          state: "false"
         }
       }
     },
     methods: {
       check(){
-
+        console.log('call the check funciton')
+        if(id == undefined || pw == undefined){
+          this.wd.msg = 'invalid input'
+          this.wd.state = 'true'
+        }
       },
       login(){
         axios.post(`http://webhacker.xyz:8000/apis/login`, this.form)
