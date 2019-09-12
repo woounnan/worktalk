@@ -14,6 +14,7 @@ router.post('/', (req, res) => {
 			console.log('login failed')
 			return res.send({code: 0})
 		}
+		console.log('find the user : ' + user.id)
 		console.log('login succeeded')
 		res.send({code: 1})
 	})
