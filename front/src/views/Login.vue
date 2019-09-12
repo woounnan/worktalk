@@ -110,7 +110,7 @@
         this.login(id.split(' ').join(''), pw.split(' ').join(''))
       },
       login(id, pw){
-        axios.post(`http://webhacker.xyz:8000/apis/login`, this.form)
+        axios.post(`http://webhacker.xyz:8000/apis/login`, {id: id, pw: pw})
         .then(r => console.log(r.data))
         .catch(e => console.error(e.message))
       }
