@@ -75,7 +75,7 @@
         </v-row>
       </v-container>
     </v-content>
-    <v-alert :value="true" :type="wd.state" v-model="wd.msg">
+    <v-alert :value="wd.state" type="error" v-model="wd.msg">
       This is a error alert.
     </v-alert>
   </v-app>
@@ -92,7 +92,7 @@
         },
         wd: {
           msg: '',
-          state: "false"
+          state: "error"
         }
       }
     },
