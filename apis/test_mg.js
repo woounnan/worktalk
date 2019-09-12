@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
 	password: { type: String, required: true, unique: true, trim: true }
 })
 
-var Users = mongoose.model('Users', userSchema)
+var Users = mongoose.model('Users', userSchema, 'Test')
 
 var users = new Users('Bobasdf', 'bobob')
 users.save( ( e, user) =>{
