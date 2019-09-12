@@ -90,7 +90,7 @@
           pw: ''
         },
         wd: {
-          msg: '',
+          msg: 'inavlid input',
           state: "false"
         }
       }
