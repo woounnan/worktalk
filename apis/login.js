@@ -4,7 +4,7 @@ var router = express.Router()
 var User = require('./model')
 const jwt = require('jsonwebtoken')
 
-
+console.log('what happenning occured now?')
 
 router.post('/', (req, res) => {
 	const {id , pw} = req.body
