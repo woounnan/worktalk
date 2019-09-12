@@ -106,7 +106,7 @@
         console.log('call the check funciton')
         console.log('id : '+id)
         console.log('pw : '+pw)
-        if(id == undefined || pw == undefined){
+        if(id == '' || pw == ''){
           this.wd.state = true
         }
       },
