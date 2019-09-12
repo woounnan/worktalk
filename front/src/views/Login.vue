@@ -103,14 +103,13 @@
       check(){
         var id = this.form.id
         var pw = this.form.pw
-        console.log('call the check funciton')
-        console.log('id : '+id)
-        console.log('pw : '+pw)
         if(id == '' || pw == ''){
           this.wd.state = true
+          return -1
         }
+        login(id.split(' ').join(''), pw.split(' ').join(''))
       },
-      login(){
+      login(id, pw){
         axios.post(`http://webhacker.xyz:8000/apis/login`, this.form)
         .then(r => console.log(r.data))
         .catch(e => console.error(e.message))

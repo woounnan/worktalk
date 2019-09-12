@@ -12,10 +12,10 @@ router.post('/', (req, res) => {
 	const {id , pw} = req.body
 	if(!id || !pw){
 		console.log('failed login')
-		return res.send({code: 0, msg: 'invalid input values.'})
+		return res.send({code: 0})
 	}
 
-	res.send({code: 1, msg: 'Create user successfully'})
+	res.send({code: 1})
 
 })
 
