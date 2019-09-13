@@ -14,7 +14,7 @@
             sm="8"
             md="4"
           >
-            <modals-container :test=this.test/>
+            <modals-container />
             <v-card class="elevation-12">
               <v-toolbar
                 color="primary"
@@ -51,7 +51,7 @@
     </v-content>
 <template>
   <div>
-    <v-alert v-model="wd.state" type="error" dismissible>
+    <v-alert v-model="wd.state" type="wd.type" dismissible @sub="showing">
       {{wd.msg}}
     </v-alert>
   </div>
@@ -81,7 +81,8 @@
         },
         wd: {
           msg: '잘못된 입력',
-          state: false
+          state: false,
+          type: 'error'
         }
       }
     },
@@ -120,6 +121,11 @@
             console.log(r.data)
           })
           .catch(e => console.error(e.message))
+      },
+      showing(){
+        this.wd.state = true;
+        this.wd.type = 'success';
+        this.wd.msg = '등록완료';
       }
     }
 }

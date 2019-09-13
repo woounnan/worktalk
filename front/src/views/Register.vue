@@ -91,7 +91,7 @@ export default {
   ],methods : {
       sub(){
         console.log('call the sub function');
-        this.test = false;
+        this.$emit('sub');
         this.closeWindow();
       },
       closeWindow(){
