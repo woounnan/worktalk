@@ -87,6 +87,7 @@
 </template>
 
 <script>
+  import Register from './Register.vue'
   import axios from 'axios'
   export default {
     data () {
@@ -104,7 +105,19 @@
     methods: {
       reg(){
         console.log('call reg function');
-        location.href = '/reg'
+        //location.href = '/reg' //normal move
+        this.$modal.show(Register,
+          {
+            hot_table : 'data',
+            modal : this.$modal
+          },
+          {
+            name: 'dynamic-modal',
+            width: '330px',
+            height: '130px',
+            draggable: true
+          },
+        })
       },
       check(){
         var id = this.form.id

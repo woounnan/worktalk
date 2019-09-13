@@ -6,7 +6,7 @@
           <span class="headline white--text">사용자 정보 등록</span>
 
           <div class="flex-grow-1"></div>
-          <v-btn dark icon>
+          <v-btn dark icon @click="sub">
             <v-icon>check</v-icon>
           </v-btn>
 
@@ -89,8 +89,12 @@ export default {
   },props : [
       'hot_table',
   ],methods : {
+      sub(){
+        console.log('call the sub function');
+        this.closeWindow();
+      },
       closeWindow(){
-        console.log('close the windows');
+        console.log('call the closeWindow function');
         this.$emit('close')
       }
   }
