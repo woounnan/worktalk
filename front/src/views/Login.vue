@@ -115,7 +115,7 @@
           },
           {
             name: 'dynamic-modal',
-            width: 'auto',
+            width: '500px',
             height: 'auto',
             draggable: true
           },
