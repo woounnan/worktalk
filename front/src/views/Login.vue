@@ -88,7 +88,7 @@
         console.log('hodo');
       },
       reg(){
-        console.log('up: '+ up);
+        console.log('up: '+ this.up);
         console.log('call reg function');
         //location.href = '/reg' //normal move
         this.$modal.show(Register,
