@@ -18,33 +18,32 @@
         <v-list>
           <v-list-item @click="">
             <v-list-item-action>
-              <v-icon>mdi-phone</v-icon>
+              <v-icon>person</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>타이틀은 뭘까요</v-list-item-title>
+              <v-text-field
+                    v-model="v_user.name"
+                    type="text"
+                  ></v-text-field>
             </v-list-item-content>
-            <v-list-item-action>
-
-              <v-icon>mdi-message-text</v-icon>
-            </v-list-item-action>
           </v-list-item>
 
           <v-divider inset></v-divider>
 
           <v-list-item @click="">
             <v-list-item-action>
-              <v-icon>mdi-phone</v-icon>
+              <v-icon>lock</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>(323) 555-6789</v-list-item-title>
+              <v-text-field
+                    v-model="v_user.pw"
+                    type="password"
+                  ></v-text-field>
             </v-list-item-content>
-
-            <v-list-item-action>
-              <v-icon>mdi-message-text</v-icon>
-            </v-list-item-action>
           </v-list-item>
+
 
           <v-divider inset></v-divider>
 
