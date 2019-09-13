@@ -104,7 +104,7 @@
     methods: {
       reg(){
         console.log('call reg function');
-        location.href = '/Register'
+        location.href = '/reg'
       },
       check(){
         var id = this.form.id
