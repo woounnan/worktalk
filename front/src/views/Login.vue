@@ -52,7 +52,7 @@
     </v-content>
 <template>
   <div>
-    <v-alert v-model="wd.state" type="error" dismissible>
+    <v-alert v-model="wd.state" :v-model.sync="up" type="error" dismissible>
       {{wd.msg}}
     </v-alert>
   </div>
@@ -72,6 +72,7 @@
     },
     data () {
       return {
+          up : false
         form: {
           id: '',
           pw: ''
