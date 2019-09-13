@@ -12,7 +12,7 @@ window.Vue = Vue;
 Vue.config.productionTip = false
 
 
-var App = new Vue({
+var app = new Vue({
   router,
   store,
   vuetify,
