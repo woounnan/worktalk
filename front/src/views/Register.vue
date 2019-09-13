@@ -17,6 +17,7 @@
 
         <v-list>
           <v-list-item @click="">
+
             <v-list-item-action>
               <v-icon>person</v-icon>
             </v-list-item-action>
@@ -76,10 +77,11 @@
 
 <script>
 export default {
-  data:function(){
-      return {
-          del_password:'',
-      }
+  data () {
+    v_user : { 
+      name : '',
+      pw : ''
+    }
   },props : [
       'hot_table',
   ],methods : {
