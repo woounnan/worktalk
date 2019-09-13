@@ -66,7 +66,7 @@
   export default {
     mounted() {
       this.$root.$on('bv::modal::shown', (event, id) => {
-        console.log('Mo'dal is about to be shown', event, id);
+        console.log('Modal is about to be shown', event, id);
       })
     },
     data () {
