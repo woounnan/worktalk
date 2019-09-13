@@ -78,9 +78,11 @@
 <script>
 export default {
   data () {
-    v_user : { 
+    return {
+      v_user : { 
       name : '',
       pw : ''
+      }
     }
   },props : [
       'hot_table',
