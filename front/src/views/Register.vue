@@ -88,7 +88,6 @@ export default {
     }
   },props : [
       hot_table
-  ]
   ],methods : {
       sub(){
         console.log('call the sub function');
