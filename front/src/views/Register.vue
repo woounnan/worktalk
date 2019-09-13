@@ -99,6 +99,7 @@ export default {
         this.$emit('close')
       }
   },created () {
+    var bus = new Vue()
     bus.$on('test', 1)
   }
 }
