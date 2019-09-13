@@ -51,7 +51,7 @@
     </v-content>
 <template>
   <div>
-    <v-alert v-model="wd.state" type="wd.type" dismissible @sub="showing">
+    <v-alert v-model="wd.state" type="wd.type" dismissible >
       {{wd.msg}}
     </v-alert>
   </div>
@@ -100,7 +100,10 @@
             width: '50%',
             height: '100%',
             draggable: true
-          },
+          }, 
+          'closed' : (event) => {
+            console.log('close the modal');
+          }
         )
       },
       check(){
