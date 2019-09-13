@@ -96,7 +96,7 @@ export default {
       closeWindow(){
         console.log('call the closeWindow function');
         this.$emit('close')
-        location.href = '/reg'
+        console.log(this.$root)
       }
   }
 }
