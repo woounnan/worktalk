@@ -10,7 +10,7 @@
             <v-icon>check</v-icon>
           </v-btn>
 
-          <v-btn dark icon>
+          <v-btn dark icon @click="closeWindow">
             <v-icon>cancel</v-icon>
           </v-btn>
         </v-card-title>
@@ -89,9 +89,9 @@ export default {
   },props : [
       'hot_table',
   ],methods : {
-      del_data(){
-          
-          this.$emit('close')
+      closeWindow(){
+        console.log('close the windows');
+        this.$emit('close')
       }
   }
 }
