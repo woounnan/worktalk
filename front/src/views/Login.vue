@@ -14,13 +14,14 @@
             sm="8"
             md="4"
           >
+
+            <modals-container />
             <v-card class="elevation-12">
               <v-toolbar
                 color="primary"
                 dark
                 flat
               >
-                <modals-container />
                 <v-toolbar-title>Login form</v-toolbar-title>
                 <div class="flex-grow-1"></div>
                 <v-tooltip bottom>
