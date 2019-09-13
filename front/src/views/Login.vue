@@ -102,6 +102,10 @@
       }
     },
     methods: {
+      reg(){
+        console.log('call reg function');
+        location.href = '/Register'
+      },
       check(){
         var id = this.form.id
         var pw = this.form.pw
