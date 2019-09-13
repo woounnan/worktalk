@@ -100,10 +100,10 @@
             width: '50%',
             height: '100%',
             draggable: true
-          }, 
+          }, {
           'closed' : (event) => {
             console.log('close the modal');
-          }
+          }}
         )
       },
       check(){
