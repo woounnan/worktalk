@@ -91,7 +91,9 @@ export default {
   ],methods : {
       sub(){
         console.log('call the sub function');
-        this.$emit('sub');
+        
+        var bus = new Vue()
+        bus.$on('test', 1)
         this.closeWindow();
       },
       closeWindow(){
@@ -99,8 +101,6 @@ export default {
         this.$emit('close')
       }
   },created () {
-    var bus = new Vue()
-    bus.$on('test', 1)
   }
 }
 </script>
