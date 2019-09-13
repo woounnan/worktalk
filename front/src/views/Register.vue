@@ -3,7 +3,7 @@
     <v-col cols="12" sm="8">
       <v-card>
         <v-card-title class="cyan darken-1">
-          <span class="headline white--text">Sarah Mcbeal</span>
+          <span class="headline white--text">사용자 정보 등록</span>
 
           <div class="flex-grow-1"></div>
           <v-btn dark icon>
@@ -22,7 +22,7 @@
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>(650) 555-1234</v-list-item-title>
+              <v-list-item-title>v-list-item-title>
             </v-list-item-content>
             <v-list-item-action>
 
@@ -70,11 +70,6 @@
             </v-list-item-content>
           </v-list-item>
         </v-list>
-
-        <v-img
-          src="https://picsum.photos/700?image=996"
-          height="200px"
-        ></v-img>
       </v-card>
     </v-col>
   </v-row>
