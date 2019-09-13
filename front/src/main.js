@@ -11,7 +11,8 @@ Vue.use(VModal, { dynamic: true })
 window.Vue = Vue;
 Vue.config.productionTip = false
 
-new Vue({
+
+var App = new Vue({
   router,
   store,
   vuetify,
