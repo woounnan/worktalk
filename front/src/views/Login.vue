@@ -64,6 +64,11 @@
   import Register from './Register.vue'
   import axios from 'axios'
   export default {
+    mounted() {
+      this.$root.$on(Register, (event, id) => {
+        console.log('Modal is about to be shown', event, id);
+      })
+    },
     data () {
       return {
         form: {
