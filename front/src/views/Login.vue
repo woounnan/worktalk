@@ -14,7 +14,7 @@
             sm="8"
             md="4"
           >
-            <modals-container />
+            <modals-container :test=this.test/>
             <v-card class="elevation-12">
               <v-toolbar
                 color="primary"
@@ -92,7 +92,6 @@
         //location.href = '/reg' //normal move
         this.$modal.show(Register,
           {
-            test : false,
             modal : this.$modal
           },
           {
