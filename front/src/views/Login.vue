@@ -66,7 +66,7 @@
   export default {
     props : [
       'test'
-    }
+    },
     mounted() {
       console.log('mounted!')
       this.$modal.on('show', (event, id) => {
