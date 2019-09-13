@@ -96,6 +96,7 @@ export default {
       closeWindow(){
         console.log('call the closeWindow function');
         this.$emit('close')
+        console.log('What happend cuz this??')
       }
   }
 }
