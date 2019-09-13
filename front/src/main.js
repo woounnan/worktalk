@@ -4,6 +4,10 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
+
+import VModal from 'vue-js-modal'
+Vue.use(VModal, { dynamic: true })
+
 window.Vue = Vue;
 Vue.config.productionTip = false
 
