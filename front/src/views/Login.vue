@@ -72,7 +72,7 @@
     },
     data () {
       return {
-          up : false,
+          up : true,
         form: {
           id: '',
           pw: ''
