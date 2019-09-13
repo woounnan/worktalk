@@ -15,7 +15,7 @@
             md="4"
           >
 
-            <modals-container />
+            <modals-container @closed="closeModal"/>
             <v-card class="elevation-12">
               <v-toolbar
                 color="primary"
@@ -83,6 +83,9 @@
       }
     },
     methods: {
+      closeModal(){
+        console.log('hodo');
+      },
       reg(){
         console.log('call reg function');
         //location.href = '/reg' //normal move
