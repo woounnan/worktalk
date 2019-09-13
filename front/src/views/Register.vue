@@ -87,12 +87,11 @@ export default {
       }
     }
   },props : [
-      'hot_table'
+      'test'
   ],methods : {
       sub(){
-        console.log('@@@@@@@@@@@@')
         console.log('call the sub function');
-        this.$emit('update:up', true)
+        this.test = false;
         this.closeWindow();
       },
       closeWindow(){

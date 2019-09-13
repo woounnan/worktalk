@@ -88,7 +88,6 @@
     },
     methods: {
       reg(){
-        this.test = false;
         console.log('test: '+ this.test);
         console.log('call reg function');
         //location.href = '/reg' //normal move
