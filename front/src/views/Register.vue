@@ -26,7 +26,7 @@
               <v-text-field
                     v-model="v_user.name"
                     type="text"
-                    name="아이디 입력"
+                    value="아이디 입력"
                   ></v-text-field>
             </v-list-item-content>
           </v-list-item>
@@ -42,7 +42,7 @@
               <v-text-field
                     v-model="v_user.pw"
                     type="password"
-                    name="패스워드 입력"
+                    value="패스워드 입력"
                   ></v-text-field>
             </v-list-item-content>
           </v-list-item>
