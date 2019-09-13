@@ -91,7 +91,7 @@ export default {
   ],methods : {
       sub(){
         console.log('call the sub function');
-        console.log('hot:'+this.hot_table);
+        this.$emit('update:up', true)
         this.closeWindow();
       },
       closeWindow(){
