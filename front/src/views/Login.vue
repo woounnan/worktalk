@@ -98,7 +98,7 @@
           {
             name: 'dynamic-modal',
             width: '50%',
-            height: '50%',
+            height: '100%',
             draggable: true
           },
         )
