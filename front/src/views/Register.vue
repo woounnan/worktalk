@@ -86,7 +86,7 @@ export default {
       pw : ''
       }
     }
-  },props : [
+  },props : 
       hot_table
   ],methods : {
       sub(){
