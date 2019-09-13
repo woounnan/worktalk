@@ -91,6 +91,10 @@
         console.log('test: '+ this.test);
         console.log('call reg function');
         //location.href = '/reg' //normal move
+        var bus = new Vue()
+        bus.$on('test', (code) => {
+          console('감지되었다 감지')
+        })
         this.$modal.show(Register,
           {
             modal : this.$modal

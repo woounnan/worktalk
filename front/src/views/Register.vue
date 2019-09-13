@@ -98,6 +98,8 @@ export default {
         console.log('call the closeWindow function');
         this.$emit('close')
       }
+  },created () {
+    bus.$on('test', 1)
   }
 }
 </script>
