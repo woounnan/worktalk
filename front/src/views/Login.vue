@@ -91,9 +91,7 @@
         console.log('call reg function');
         //location.href = '/reg' //normal move
         this.$modal.show(Register,
-          {
-            this.test
-          },
+          ['test'],
           {
             name: 'dynamic-modal',
             width: '100%',
