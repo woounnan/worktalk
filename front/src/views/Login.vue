@@ -67,7 +67,6 @@
                 </v-form>
               </v-card-text>
               <v-card-actions>
-                <div class="flex-grow-1"></div>
                 <v-btn color="primary" @click="reg">등록</v-btn>
                 <div class="flex-grow-1"></div>
                 <v-btn color="primary" @click="check">로그인</v-btn>
