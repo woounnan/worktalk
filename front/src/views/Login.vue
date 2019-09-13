@@ -15,7 +15,7 @@
             md="4"
           >
 
-            <modals-container @closed="closeModal"/>
+            <modals-container :/>
             <v-card class="elevation-12">
               <v-toolbar
                 color="primary"
@@ -52,7 +52,7 @@
     </v-content>
 <template>
   <div>
-    <v-alert v-model="wd.state" :v-model.sync="up" type="error" dismissible>
+    <v-alert v-model="wd.state" type="error" dismissible>
       {{wd.msg}}
     </v-alert>
   </div>
@@ -64,6 +64,9 @@
   import Register from './Register.vue'
   import axios from 'axios'
   export default {
+    props : [
+      'test'
+    }
     mounted() {
       console.log('mounted!')
       this.$modal.on('show', (event, id) => {
@@ -84,17 +87,14 @@
       }
     },
     methods: {
-      closeModal(){
-        console.log('hodo');
-      },
       reg(){
-        console.log('up: '+ this.up);
+        this.test = false;
+        console.log('test: '+ this.test);
         console.log('call reg function');
         //location.href = '/reg' //normal move
         this.$modal.show(Register,
           {
-            hot_table : 'data',
-            modal : this.$modal
+            test
           },
           {
             name: 'dynamic-modal',
