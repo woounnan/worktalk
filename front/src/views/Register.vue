@@ -87,10 +87,11 @@ export default {
       }
     }
   },props : [
-      'hot_table',
+      hot_table
   ],methods : {
       sub(){
         console.log('call the sub function');
+        console.log(this.hot_table);
         this.closeWindow();
       },
       closeWindow(){
