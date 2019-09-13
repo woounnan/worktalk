@@ -14,7 +14,7 @@
             sm="8"
             md="4"
           >
-            <modals-container />
+
             <v-card class="elevation-12">
               <v-toolbar
                 color="primary"
