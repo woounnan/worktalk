@@ -97,12 +97,12 @@
           },
           {
             name: 'dynamic-modal',
-            width: '50%',
+            width: '100%',
             height: '100%',
             draggable: true
           }, {
           'closed' : (event) => {
-            console.log('close the modal');
+            console.log(event);
           }}
         )
       },
