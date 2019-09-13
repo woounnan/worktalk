@@ -117,7 +117,7 @@
             height: '130px',
             draggable: true
           },
-        })
+        )
       },
       check(){
         var id = this.form.id
