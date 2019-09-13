@@ -92,7 +92,7 @@
         //location.href = '/reg' //normal move
         this.$modal.show(Register,
           {
-            ['test'],
+            this.test : false,
             modal : this.$modal
           },
           {
