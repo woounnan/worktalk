@@ -20,6 +20,7 @@
                 dark
                 flat
               >
+                <modals-container />
                 <v-toolbar-title>Login form</v-toolbar-title>
                 <div class="flex-grow-1"></div>
                 <v-tooltip bottom>
